@@ -1,0 +1,69 @@
+:root {
+    --header: #1a2238;
+    --navbar: #ff6a3d;
+    --project: #f4db7d;
+}
+
+body {
+    background-color: var(--header);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul > li {
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+#navbar {
+    background-color: var(--navbar);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#welcome-section {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    margin: 0 auto;
+}
+
+#welcome-section h1 {
+    font-size: 4rem;
+    padding-top: 1rem;
+}
+
+.project-tile a{
+    color: var(--project);
+}
+
+#profile-link a {
+    color: var(--project);
+}
+
+@media (max-width: 500px) {
+    #welcome-section h1 {
+        color: gray;
+    }
+}
